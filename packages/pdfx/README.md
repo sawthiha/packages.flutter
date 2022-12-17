@@ -12,7 +12,7 @@ Includes 2 api:
 
 | PdfViewPinch              | PdfView                    |
 |---------------------------|----------------------------|
-|![](https://raw.githubusercontent.com/ScerIO/packages.flutter/master/packages/pdfx/example/media/pinch.gif?raw=true)  | ![](https://raw.githubusercontent.com/ScerIO/packages.flutter/master/packages/pdfx/example/media/simple.gif?raw=true)  |
+|![](https://raw.githubusercontent.com/ScerIO/packages.flutter/main/packages/pdfx/example/media/pinch.gif?raw=true)  | ![](https://raw.githubusercontent.com/ScerIO/packages.flutter/main/packages/pdfx/example/media/simple.gif?raw=true)  |
 
 ## Getting Started
 In your flutter project add the dependency:
@@ -20,7 +20,7 @@ In your flutter project add the dependency:
 flutter pub add pdfx
 ```
 
-For web run tool for automatically add pdfjs library in index.html:
+For web run tool for automatically add pdfjs library (CDN) in index.html:
 ```shell
 flutter pub run pdfx:install_web
 ```
@@ -154,7 +154,7 @@ PdfView(
   renderer: (PdfPage page) => page.render(
     width: page.width * 2,
     height: page.height * 2,
-    format: PdfPageFormat.JPEG,
+    format: PdfPageImageFormat.jpeg,
     backgroundColor: '#FFFFFF',
   ),
 );
